@@ -1,0 +1,21 @@
+name: manage-azure-policy-bbe98365
+on:
+  push:
+    paths:
+      - 'policies/FTPS_should_be_required_in_your_Web_App_4d24b6d4-5e53-4a4f-a7f4-618fa573ee4b/**'
+      - .github/workflows/manage-azure-policy-bbe98365.yml
+jobs:
+  apply-azure-policy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Login to Azure
+      uses: azure/login@v1
+      with:
+        creds: ${{secrets.AZURE_CREDENTIALS_bbe98365}}
+    - name: Create or Update Azure Policies
+      uses: azure/manage-azure-policy@v0
+      with:
+        paths: |
+          policies/FTPS_should_be_required_in_your_Web_App_4d24b6d4-5e53-4a4f-a7f4-618fa573ee4b/**

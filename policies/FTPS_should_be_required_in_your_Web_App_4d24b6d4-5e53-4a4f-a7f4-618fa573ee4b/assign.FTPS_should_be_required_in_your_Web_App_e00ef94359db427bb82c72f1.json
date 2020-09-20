@@ -1,0 +1,25 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "properties": {
+  "displayName": "FTPS should be required in your Web App",
+  "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/4d24b6d4-5e53-4a4f-a7f4-618fa573ee4b",
+  "scope": "/subscriptions/28871627-6a92-4b87-b2a9-5c59bc4fe456/resourceGroups/dashboards",
+  "notScopes": [],
+  "parameters": {},
+  "metadata": {
+   "assignedBy": "Bert Rochester",
+   "parameterScopes": {},
+   "createdBy": "4a90e640-7ff8-4911-b356-483ad41f7cf0",
+   "createdOn": "2020-09-20T15:33:22.663739Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/subscriptions/28871627-6a92-4b87-b2a9-5c59bc4fe456/resourceGroups/dashboards/providers/Microsoft.Authorization/policyAssignments/e00ef94359db427bb82c72f1",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "e00ef94359db427bb82c72f1"
+}
